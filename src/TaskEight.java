@@ -1,19 +1,18 @@
 public class TaskEight {
     public static void main(String[] args) {
-//        String str = "" ;
-//        for (int i = 0; i < 8 ; i++){
-//             str=str+"p" ;
-//                System.out.println(str);
-//            if (  i > 5){
-//                String newstr  = str.replaceAll("p", "");
-//                System.out.println(newstr);
-//            }
-//        }
         String a = "";
-        char [] arrayChars = a.toCharArray ();
-        for(int i = 0; i < 8;i++){
-            a = a + "*" ;
+        for (int i = 0; i < 4; i++) {
+            a = a + "*";
             System.out.println(a);
+        }
+        for (int j = 0; j < 4; j++) {
+            for (int k = 0; k < j; k++){
+                System.out.print(" ");
+        }
+            for (int k = j; k < 4; k++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
